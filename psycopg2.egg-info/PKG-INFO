@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: psycopg2
+Version: 2.4.6
+Summary: Python-PostgreSQL Database Adapter
+Home-page: http://initd.org/psycopg/
+Download-URL: http://initd.org/psycopg/tarballs/PSYCOPG-2-4/psycopg2-2.4.6.tar.gz
+Author: Federico Di Gregorio
+Author-email: Federico Di Gregorio <fog@initd.org>, Daniele Varrazzo <daniele.varrazzo@gmail.com>
+Maintainer: Federico Di Gregorio
+Maintainer-email: Federico Di Gregorio <fog@initd.org>
+License: LGPL with exceptions or ZPL
+Project-URL: Homepage, http://initd.org/psycopg/
+Project-URL: Documentation, http://initd.org/psycopg/docs/
+Project-URL: Repository, https://github.com/wsx7524999/psycopg2
+Project-URL: Bug Tracker, http://psycopg.lighthouseapp.com/
+Project-URL: Download, http://initd.org/psycopg/tarballs/
+Keywords: postgresql,database,adapter,dbapi,postgres,psycopg,sql
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)
+Classifier: License :: OSI Approved :: Zope Public License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: C
+Classifier: Programming Language :: SQL
+Classifier: Topic :: Database
+Classifier: Topic :: Database :: Front-Ends
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Unix
+Requires-Python: >=2.4
+License-File: LICENSE
+License-File: AUTHORS
+
+psycopg2 - Python-PostgreSQL Database Adapter
+********************************************
+
+psycopg2 is a PostgreSQL database adapter for the Python programming
+language.  psycopg2 was written with the aim of being very small and fast,
+and stable as a rock.
+
+psycopg2 is different from the other database adapter because it was
+designed for heavily multi-threaded applications that create and destroy
+lots of cursors and make a conspicuous number of concurrent INSERTs or
+UPDATEs. psycopg2 also provides full asynchronous operations and support
+for coroutine libraries.
+
+psycopg2 can compile and run on Linux, FreeBSD, Solaris, MacOS X and
+Windows architecture. It supports Python versions from 2.4 onwards and
+PostgreSQL versions from 7.4 onwards.
+
+psycopg2 is free software ("free as in freedom" but I like beer too.)
+It is licensed under the GNU Lesser General Public License, version 3 or
+later plus an exception to allow OpenSSL (libpq) linking; see LICENSE for
+more details.
+
+Documentation
+-------------
+
+Start by reading the INSTALL file. More information about psycopg2 extensions
+to the DBAPI-2.0 is available in the files located in the doc/ direcory.
+Example code can be found in the examples/ directory. If you make any changes
+to the code make sure to run the unit tests localed in tests/.
+
+Online documentation can be found at: http://initd.org/psycopg/
+
+If you stumble upon any bugs, please tell us at: http://psycopg.lighthouseapp.com/
+
+Contributors
+------------
+
+For a list of contributors to the project, see the AUTHORS file.
