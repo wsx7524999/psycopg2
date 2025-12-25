@@ -1,0 +1,75 @@
+# Project Metadata for psycopg2
+# This file contains additional metadata details for the psycopg2 project
+
+project:
+  name: psycopg2
+  version: 2.4.6
+  description: Python-PostgreSQL Database Adapter
+  
+  # Core Purpose
+  purpose: |
+    psycopg2 is a PostgreSQL database adapter for the Python programming language.
+    It was designed for heavily multi-threaded applications that create and destroy
+    lots of cursors and make a conspicuous number of concurrent INSERTs or UPDATEs.
+    psycopg2 provides full asynchronous operations and support for coroutine libraries.
+  
+  # Technology Stack
+  technologies:
+    - Python (2.4+)
+    - PostgreSQL (7.4+)
+    - C (for extensions)
+    - DBAPI 2.0 compliant
+  
+  # Key Features
+  features:
+    - Full PostgreSQL support
+    - Thread-safe and multi-threaded application support
+    - Asynchronous operations
+    - Coroutine library support
+    - COPY TO/FROM support
+    - Large object support
+    - Notification support
+    - Two-phase commit protocol support
+    - Connection pooling
+    - Type casting
+  
+  # Supported Platforms
+  platforms:
+    - Linux
+    - FreeBSD
+    - Solaris
+    - MacOS X
+    - Windows
+  
+  # License Information
+  license:
+    type: LGPL v3+ with exceptions or ZPL
+    details: |
+      psycopg2 is licensed under the GNU Lesser General Public License, version 3 or
+      later, with an exception to allow OpenSSL (libpq) linking. Alternative licenses
+      include ZPL for ZPsycopgDA components and BSD-like for adapter/microprotocol files.
+  
+  # Community & Support
+  community:
+    homepage: http://initd.org/psycopg/
+    documentation: http://initd.org/psycopg/docs/
+    bug_tracker: http://psycopg.lighthouseapp.com/
+    repository: https://github.com/wsx7524999/psycopg2
+  
+  # Development
+  development:
+    language: Python, C
+    build_system: distutils/setuptools
+    test_framework: unittest (in tests/ directory)
+    
+  # Authors and Maintainers
+  team:
+    maintainer: Federico Di Gregorio
+    co_maintainer: Daniele Varrazzo
+    win32_contributor: Jason Erickson
+    
+  # Quality Standards
+  quality:
+    stability: Production/Stable
+    compatibility: DBAPI 2.0 compliant with extensions
+    performance: Optimized for multi-threaded, high-concurrency applications

@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools>=40.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "psycopg2"
+version = "2.4.6"
+description = "Python-PostgreSQL Database Adapter"
+readme = "README"
+requires-python = ">=2.4"
+license = {text = "LGPL with exceptions or ZPL"}
+authors = [
+    {name = "Federico Di Gregorio", email = "fog@initd.org"},
+    {name = "Daniele Varrazzo", email = "daniele.varrazzo@gmail.com"},
+]
+maintainers = [
+    {name = "Federico Di Gregorio", email = "fog@initd.org"},
+]
+keywords = [
+    "postgresql",
+    "database",
+    "adapter",
+    "dbapi",
+    "postgres",
+    "psycopg",
+    "sql",
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)",
+    "License :: OSI Approved :: Zope Public License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: C",
+    "Programming Language :: SQL",
+    "Topic :: Database",
+    "Topic :: Database :: Front-Ends",
+    "Topic :: Software Development",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: Unix",
+]
+
+[project.urls]
+Homepage = "http://initd.org/psycopg/"
+Documentation = "http://initd.org/psycopg/docs/"
+Repository = "https://github.com/wsx7524999/psycopg2"
+"Bug Tracker" = "http://psycopg.lighthouseapp.com/"
+Download = "http://initd.org/psycopg/tarballs/"
+
+[tool.setuptools]
+zip-safe = false
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["psycopg2*"]

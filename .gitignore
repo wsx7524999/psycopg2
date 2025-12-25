@@ -10,3 +10,5 @@ doc/src/_build/*
 doc/html/*
 doc/psycopg2.txt
 env
+*.egg-info/
+*.egg
